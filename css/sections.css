@@ -1,8 +1,3 @@
-/* sections.css — Isi tiap section: hero, about, skills, projects, journey, contact */
-
-/* ==========================================================
-   6. HERO
-   ========================================================== */
 .hero {
   padding: 88px 0 96px;
 }
@@ -57,12 +52,12 @@
   color: var(--accent);
 }
 
-/* Frame foto profil */
+
 .photo {
   border-radius: 28px;
   overflow: hidden;
   border: 1px solid var(--line);
-  box-shadow: 14px 14px 0 var(--soft), 0 0 0 1px var(--line);   /* bingkai offset lembut */
+  box-shadow: 14px 14px 0 var(--soft), 0 0 0 1px var(--line);  
   aspect-ratio: 4 / 5;
   max-width: 320px;
   justify-self: end;
@@ -82,9 +77,6 @@
 }
 
 
-/* ==========================================================
-   7. ABOUT
-   ========================================================== */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,9 +112,6 @@
 }
 
 
-/* ==========================================================
-   8. SKILLS
-   ========================================================== */
 .sub-h {
   font-size: 1.1rem;
   font-weight: 600;
@@ -166,10 +155,6 @@
   font-size: 0.78rem;
 }
 
-
-/* ==========================================================
-   9. PROJECTS
-   ========================================================== */
 .filters {
   display: flex;
   gap: 8px;
@@ -296,10 +281,6 @@
   }
 }
 
-
-/* ==========================================================
-   10. JOURNEY & EDUCATION
-   ========================================================== */
 .tl {
   list-style: none;
   padding: 0;
@@ -312,7 +293,6 @@
   padding: 0 0 38px 34px;
 }
 
-/* Titik di garis timeline */
 .tl li::before {
   content: "";
   position: absolute;
@@ -370,10 +350,6 @@
   font-size: 0.88rem;
 }
 
-
-/* ==========================================================
-   11. CONTACT & FORM
-   ========================================================== */
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -436,12 +412,6 @@ textarea:focus {
   color: var(--mute);
 }
 
-
-/* ==========================================================
-   TAMBAHAN TAMPILAN
-   ========================================================== */
-
-/* Label kecil di atas judul section: "01 — About" */
 .eyebrow {
   color: var(--accent);
   font-size: 0.8rem;
@@ -451,7 +421,6 @@ textarea:focus {
   margin-bottom: 14px;
 }
 
-/* Status di hero, mis. "Open to internship opportunities" */
 .pill {
   display: inline-flex;
   align-items: center;
@@ -479,7 +448,6 @@ textarea:focus {
   100% { box-shadow: 0 0 0 9px rgba(76, 175, 136, 0); }
 }
 
-/* Pola titik halus di latar hero */
 .hero {
   position: relative;
 }
@@ -500,7 +468,6 @@ textarea:focus {
   position: relative;
 }
 
-/* Thumbnail project tanpa gambar: bingkai jendela browser */
 .thumb {
   position: relative;
   padding-top: 26px;
@@ -529,7 +496,6 @@ textarea:focus {
   box-shadow: 12px 0 0 #d2d5e6, 24px 0 0 #d2d5e6;
 }
 
-/* Jika project punya screenshot, bingkai tidak dipakai */
 .thumb.has-img {
   padding-top: 0;
 }

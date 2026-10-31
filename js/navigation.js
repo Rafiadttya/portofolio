@@ -1,16 +1,7 @@
-/* ==========================================================
-   navigation.js — perilaku navigasi & scroll
-
-   Berisi: animasi section muncul saat scroll, menu navbar yang
-   aktif, menu mobile (burger), tombol kembali ke atas, dan
-   garis progres scroll.
-   ========================================================== */
 (function () {
 
   const $ = (selector, root = document) => root.querySelector(selector);
 
-
-  /* ---------- 1. Section muncul perlahan saat terlihat ---------- */
 
   function initReveal() {
     const observer = new IntersectionObserver(
@@ -28,8 +19,6 @@
     document.querySelectorAll(".rv").forEach((el) => observer.observe(el));
   }
 
-
-  /* ---------- 2. Tandai menu yang sesuai section yang sedang dibaca ---------- */
 
   function initActiveLink() {
     const navLinks = [...document.querySelectorAll("a.l")];
@@ -50,7 +39,6 @@
   }
 
 
-  /* ---------- 3. Menu mobile (burger) ---------- */
 
   function initMobileMenu() {
     const burger = $(".burger");
@@ -61,7 +49,6 @@
       burger.setAttribute("aria-expanded", isOpen);
     });
 
-    // Tutup menu setelah salah satu link diklik
     menu.addEventListener("click", (e) => {
       if (e.target.closest("a")) {
         menu.classList.remove("open");
@@ -70,8 +57,6 @@
     });
   }
 
-
-  /* ---------- 4. Tombol kembali ke atas ---------- */
 
   function initBackToTop() {
     const button = $("#top");
@@ -85,8 +70,6 @@
     button.addEventListener("click", () => window.scrollTo({ top: 0 }));
   }
 
-
-  /* ---------- 5. Garis progres scroll di bawah navbar ---------- */
 
   function initProgress() {
     const bar = $("#progress");

@@ -1,19 +1,8 @@
-/* ==========================================================
-   render.js — membuat isi halaman dari data (js/data.js)
-   dan teks (locales/*.json).
-
-   Dipanggil: saat halaman dibuka dan setiap kali bahasa berganti.
-   Berisi: link sosial/kontak, kartu skill, filter + kartu project,
-   dan timeline.
-   ========================================================== */
 (function () {
 
-  /* ---------- Fungsi bantu ---------- */
-
   const $ = (selector, root = document) => root.querySelector(selector);
-  const t = (key) => language.t(key);          // teks sesuai bahasa aktif
+  const t = (key) => language.t(key);          
 
-  // Mengamankan teks sebelum dimasukkan ke HTML
   const esc = (text) =>
     String(text).replace(/[&<>"']/g, (c) => ({
       "&": "&amp;",
@@ -24,10 +13,8 @@
     }[c]));
 
   const mailLink = "mailto:" + PROFILE.email;
-  let currentFilter = "all";                   // filter project yang sedang dipilih
+  let currentFilter = "all";                   
 
-
-  /* ---------- 1. Social & kontak (sekali saja, tidak perlu terjemahan) ---------- */
 
   function renderContactLinks() {
     const socialHTML = `
@@ -49,10 +36,6 @@
     $("#year").textContent = new Date().getFullYear();
   }
 
-
-  /* ---------- 2. Skills ---------- */
-
-  // skill = ["Nama", "nama-icon-devicon"]
   function techCard(skill, status) {
     const iconUrl =
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" +
@@ -75,10 +58,6 @@
       .map((s) => techCard(s, t("skills.statusLearning"))).join("");
   }
 
-
-  /* ---------- 3. Projects + filter ---------- */
-
-  // Tombol link: aktif jika ada URL, "Coming Soon" jika belum ada
   function linkButton(label, url, isPrimary) {
     if (url) {
       const cls = isPrimary ? "btn sm primary" : "btn sm";
@@ -88,7 +67,7 @@
   }
 
   function projectCard(p) {
-    // Thumbnail: gambar jika ada, jika tidak pakai inisial judul
+    
     const initials = p.title.split(" ").slice(0, 2).map((w) => w[0]).join("");
     const thumb = p.image
       ? `<img src="${esc(p.image)}" alt="${t("projects.alt")} ${esc(p.title)}" loading="lazy">`
@@ -133,7 +112,6 @@
     ).join("");
   }
 
-  // Klik filter: ganti kategori tanpa membuat ulang tombolnya
   function bindFilterClicks() {
     $("#filters").addEventListener("click", (e) => {
       const clicked = e.target.closest(".chip");
@@ -150,8 +128,6 @@
   }
 
 
-  /* ---------- 4. Timeline ---------- */
-
   function renderTimeline() {
     $("#timeline").innerHTML = JOURNEY.map((key) => {
       const base = "journey.items." + key;
@@ -165,10 +141,6 @@
     }).join("");
   }
 
-
-  /* ---------- Gabungan ---------- */
-
-  // Bagian yang teksnya bergantung bahasa
   function renderDynamic() {
     renderSkills();
     renderFilters();
@@ -180,7 +152,7 @@
     renderContactLinks();
     bindFilterClicks();
     renderDynamic();
-    language.onChange(renderDynamic);   // render ulang otomatis saat bahasa berganti
+    language.onChange(renderDynamic);   
   }
 
   window.render = { init };
