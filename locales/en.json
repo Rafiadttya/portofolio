@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "description": "Portfolio of Muhammad Rafi Aditya Putra, Frontend Developer & Aspiring Software Engineer. Responsive, modern, user-focused website interfaces."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "journey": "Journey",
+    "contact": "Contact",
+    "menu": "Open menu",
+    "label": "Main navigation",
+    "logo": "RA, back to top"
+  },
+  "lang": {
+    "label": "Language"
+  },
+  "hero": {
+    "badge": "Open to internship opportunities",
+    "hello": "HELLO, I'M",
+    "role": "Frontend Developer & Aspiring Software Engineer",
+    "sub1": "I build thoughtful digital experiences through clean code, modern interfaces, and a continuous passion for learning.",
+    "sub2": "My focus is website development and user experience: interfaces that are responsive, clear, and comfortable to use.",
+    "explore": "Explore My Projects",
+    "resume": "Download Resume",
+    "photoAlt": "Photo of Muhammad Rafi Aditya Putra"
+  },
+  "about": {
+    "title": "Beyond The Code.",
+    "p1": "I am a Web Developer with a strong interest in building digital experiences through design and technology.",
+    "p2": "My main focus is Frontend development, especially creating website interfaces that are responsive, modern, intuitive, and centered on user experience. I regularly work with HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS, while continuing to broaden my Backend understanding through PHP, Laravel, and MySQL.",
+    "p3": "To me, being a developer is not only about writing code, but also about continuous learning, experimenting, solving problems, and creating digital solutions that are genuinely useful. My long-term goal is to become a Software Engineer.",
+    "focusL": "Current Focus",
+    "focusV": "Frontend Development",
+    "eduL": "Education",
+    "eduV": "Bachelor's Degree in Informatics Engineering",
+    "learnL": "Learning",
+    "learnV": "Backend Development",
+    "goalL": "Career Goal",
+    "goalV": "Software Engineer"
+  },
+  "skills": {
+    "title": "Tech Stack & Skills",
+    "lead": "The technologies I use day to day and the ones I'm currently learning.",
+    "using": "Currently Using",
+    "learning": "Currently Learning",
+    "statusUsing": "Using",
+    "statusLearning": "Learning"
+  },
+  "projects": {
+    "title": "Selected Works.",
+    "lead": "A collection of projects, experiments, and things I've built along my development journey.",
+    "filterLabel": "Filter projects",
+    "empty": "No projects in this category yet.",
+    "placeholder": "Placeholder — replace with a real project",
+    "soon": "Coming Soon",
+    "alt": "Preview of",
+    "items": {
+      "stephaven": {
+        "desc": "A shoe store e-commerce website with product listing, product detail, and shopping cart pages. Data is stored client-side using IndexedDB."
+      },
+      "todo-design": {
+        "desc": "Design of a daily task app: user research, user flows, and an interactive high-fidelity prototype in Figma."
+      },
+      "placeholder": {
+        "desc": "Sample project card. Replace it with a real project: add a short description, technologies, and repository links."
+      }
+    }
+  },
+  "filters": {
+    "all": "All Projects",
+    "frontend": "Frontend",
+    "web": "Web Development",
+    "experiments": "Other Experiments"
+  },
+  "journey": {
+    "title": "My Development Journey.",
+    "items": {
+      "beginning": {
+        "year": "2024",
+        "title": "The Beginning",
+        "text": "Started my Bachelor's degree in Informatics Engineering and got to know the fundamentals of programming."
+      },
+      "foundations": {
+        "year": "2025",
+        "title": "Building Foundations",
+        "text": "Began going deeper into web development with HTML, CSS, and JavaScript, and learned UI/UX concepts and Git."
+      },
+      "expanding": {
+        "year": "2026",
+        "title": "Expanding My Skills",
+        "text": "Growing my Frontend Development skills while starting to learn PHP, Laravel, MySQL, and Backend Development concepts."
+      },
+      "next": {
+        "year": "Next",
+        "title": "The Next Chapter",
+        "text": "Continuing to grow in Software Engineering, building more complex projects, and deepening my full-stack development skills."
+      }
+    }
+  },
+  "edu": {
+    "title": "Bachelor's Degree in Informatics Engineering",
+    "years": "2024 – Present",
+    "status": "Active Student"
+  },
+  "contact": {
+    "title": "Let's Build Something Together.",
+    "lead": "Have an idea, an opportunity, or simply want to connect? I'd be happy to hear from you.",
+    "email": "Email Me"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "note": "Your message will open in your email app. There is no automatic sending service yet.",
+    "sent": "Your email app has opened. The message is only sent once you press Send there.",
+    "errName": "Please enter at least 2 characters for your name.",
+    "errEmail": "Please enter a valid email address.",
+    "errMessage": "Your message must be at least 10 characters.",
+    "subject": "Message from "
+  },
+  "footer": {
+    "role": "Frontend Developer",
+    "tagline": "Designed & Built with curiosity."
+  },
+  "top": {
+    "label": "Back to top"
+  },
+  "eyebrow": {
+    "about": "01 — About",
+    "skills": "02 — Skills",
+    "projects": "03 — Projects",
+    "journey": "04 — Journey",
+    "contact": "05 — Contact"
+  }
+}

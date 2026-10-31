@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "description": "Portfolio Muhammad Rafi Aditya Putra, Frontend Developer & Calon Software Engineer. Antarmuka website yang responsif, modern, dan berorientasi pada pengguna."
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "skills": "Keahlian",
+    "projects": "Proyek",
+    "journey": "Perjalanan",
+    "contact": "Kontak",
+    "menu": "Buka menu",
+    "label": "Navigasi utama",
+    "logo": "RA, kembali ke atas"
+  },
+  "lang": {
+    "label": "Bahasa"
+  },
+  "hero": {
+    "badge": "Terbuka untuk kesempatan magang",
+    "hello": "HALO, SAYA",
+    "role": "Frontend Developer & Calon Software Engineer",
+    "sub1": "Saya membangun pengalaman digital yang matang melalui kode yang bersih, antarmuka modern, dan semangat belajar yang tidak pernah berhenti.",
+    "sub2": "Fokus saya adalah pengembangan website dan pengalaman pengguna: antarmuka yang responsif, jelas, dan nyaman digunakan.",
+    "explore": "Lihat Proyek Saya",
+    "resume": "Unduh Resume",
+    "photoAlt": "Foto Muhammad Rafi Aditya Putra"
+  },
+  "about": {
+    "title": "Lebih dari Sekadar Kode.",
+    "p1": "Saya adalah seorang Web Developer yang memiliki ketertarikan besar dalam membangun pengalaman digital melalui desain dan teknologi.",
+    "p2": "Fokus utama saya adalah pengembangan Frontend, khususnya menciptakan antarmuka website yang responsif, modern, intuitif, dan berorientasi pada pengalaman pengguna. Saya terbiasa menggunakan HTML, CSS, JavaScript, Bootstrap, dan Tailwind CSS, sambil terus memperluas pemahaman Backend melalui PHP, Laravel, dan MySQL.",
+    "p3": "Bagi saya, menjadi developer bukan hanya tentang menulis kode, tetapi juga tentang terus belajar, bereksperimen, memecahkan masalah, dan menciptakan solusi digital yang bermanfaat. Tujuan jangka panjang saya adalah menjadi seorang Software Engineer.",
+    "focusL": "Fokus Saat Ini",
+    "focusV": "Pengembangan Frontend",
+    "eduL": "Pendidikan",
+    "eduV": "S1 Teknik Informatika",
+    "learnL": "Sedang Dipelajari",
+    "learnV": "Pengembangan Backend",
+    "goalL": "Tujuan Karier",
+    "goalV": "Software Engineer"
+  },
+  "skills": {
+    "title": "Tech Stack & Keahlian",
+    "lead": "Teknologi yang saya gunakan sehari-hari dan yang sedang saya pelajari.",
+    "using": "Sedang Digunakan",
+    "learning": "Sedang Dipelajari",
+    "statusUsing": "Digunakan",
+    "statusLearning": "Dipelajari"
+  },
+  "projects": {
+    "title": "Karya Pilihan.",
+    "lead": "Kumpulan proyek, eksperimen, dan hal-hal yang saya bangun sepanjang perjalanan belajar saya.",
+    "filterLabel": "Filter proyek",
+    "empty": "Belum ada proyek di kategori ini.",
+    "placeholder": "Placeholder — ganti dengan proyek asli",
+    "soon": "Segera Hadir",
+    "alt": "Tampilan",
+    "items": {
+      "stephaven": {
+        "desc": "Website e-commerce toko sepatu dengan halaman produk, detail produk, dan keranjang belanja. Data disimpan di sisi client menggunakan IndexedDB."
+      },
+      "todo-design": {
+        "desc": "Perancangan aplikasi pencatat tugas harian: riset pengguna, user flow, hingga high-fidelity prototype interaktif di Figma."
+      },
+      "placeholder": {
+        "desc": "Contoh kartu project. Ganti dengan project asli: tulis deskripsi singkat, teknologi, dan tautan repositori."
+      }
+    }
+  },
+  "filters": {
+    "all": "Semua Proyek",
+    "frontend": "Frontend",
+    "web": "Pengembangan Web",
+    "experiments": "Eksperimen Lainnya"
+  },
+  "journey": {
+    "title": "Perjalanan Saya sebagai Developer.",
+    "items": {
+      "beginning": {
+        "year": "2024",
+        "title": "Awal Perjalanan",
+        "text": "Memulai perjalanan pendidikan S1 Teknik Informatika dan mengenal dasar-dasar pemrograman."
+      },
+      "foundations": {
+        "year": "2025",
+        "title": "Membangun Fondasi",
+        "text": "Mulai mendalami pengembangan website, HTML, CSS, JavaScript, serta memahami konsep UI/UX dan Git."
+      },
+      "expanding": {
+        "year": "2026",
+        "title": "Memperluas Kemampuan",
+        "text": "Mengembangkan kemampuan Frontend Development, mulai mempelajari PHP, Laravel, MySQL, dan konsep Backend Development."
+      },
+      "next": {
+        "year": "Berikutnya",
+        "title": "Babak Selanjutnya",
+        "text": "Terus mengembangkan kemampuan Software Engineering, membangun project yang lebih kompleks, dan memperdalam full-stack development."
+      }
+    }
+  },
+  "edu": {
+    "title": "S1 Teknik Informatika",
+    "years": "2024 – Sekarang",
+    "status": "Mahasiswa Aktif"
+  },
+  "contact": {
+    "title": "Mari Membangun Sesuatu Bersama.",
+    "lead": "Punya ide, peluang, atau sekadar ingin terhubung? Saya senang mendengar kabar dari Anda.",
+    "email": "Kirim Email"
+  },
+  "form": {
+    "name": "Nama",
+    "email": "Email",
+    "message": "Pesan",
+    "send": "Kirim Pesan",
+    "note": "Pesan akan dibuka di aplikasi email Anda. Belum ada layanan pengiriman otomatis.",
+    "sent": "Aplikasi email dibuka. Pesan baru terkirim setelah Anda menekan Kirim di sana.",
+    "errName": "Isi nama minimal 2 karakter.",
+    "errEmail": "Masukkan alamat email yang valid.",
+    "errMessage": "Pesan minimal 10 karakter.",
+    "subject": "Pesan dari "
+  },
+  "footer": {
+    "role": "Frontend Developer",
+    "tagline": "Dirancang & Dibangun dengan rasa ingin tahu."
+  },
+  "top": {
+    "label": "Kembali ke atas"
+  },
+  "eyebrow": {
+    "about": "01 — Tentang",
+    "skills": "02 — Keahlian",
+    "projects": "03 — Proyek",
+    "journey": "04 — Perjalanan",
+    "contact": "05 — Kontak"
+  }
+}

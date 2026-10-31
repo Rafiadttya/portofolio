@@ -4,107 +4,156 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muhammad Rafi Aditya Putra — Frontend Developer</title>
-<meta name="description" content="Portfolio Muhammad Rafi Aditya Putra, Frontend Developer & Aspiring Software Engineer. Antarmuka website yang responsif, modern, dan berorientasi pengguna.">
+<meta name="description" content="Portfolio Muhammad Rafi Aditya Putra, Frontend Developer & Calon Software Engineer.">
+<meta name="theme-color" content="#f7f7f5">
+<link rel="icon" href="public/icons/favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="Muhammad Rafi Aditya Putra — Frontend Developer">
 <meta property="og:description" content="Thoughtful digital experiences through clean code and modern interfaces.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script>document.documentElement.classList.add("js");</script>
-<link rel="stylesheet" href="css/style.css">
+<script>
+  document.documentElement.classList.add("js");
+  /* Cadangan: tampilkan halaman setelah 2 detik walau JavaScript bermasalah */
+  setTimeout(function () { document.documentElement.classList.add("ready"); }, 2000);
+</script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/effects.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-<header><div class="wrap"><nav aria-label="Navigasi utama">
-  <a href="#home" class="logo" aria-label="RA, ke atas">R<span>A</span></a>
-  <button class="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
-  <ul class="links" id="menu">
-    <li><a class="l" href="#home">Home</a></li><li><a class="l" href="#about">About</a></li>
-    <li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#projects">Projects</a></li>
-    <li><a class="l" href="#journey">Journey</a></li><li><a class="l" href="#contact">Contact</a></li>
-    <li><a class="btn primary sm" href="public/resume.pdf" download="Resume-Muhammad-Rafi-Aditya-Putra.pdf">Download Resume</a></li>
-  </ul>
-</nav></div></header>
+
+<header>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="wrap">
+  <nav data-i18n-attr="aria-label:nav.label" aria-label="Navigasi utama">
+    <a href="#home" class="logo" data-i18n-attr="aria-label:nav.logo" aria-label="RA, kembali ke atas">R<span>A</span></a>
+
+    <div class="nav-right">
+      <ul class="links" id="menu">
+        <li><a class="l" href="#home" data-i18n="nav.home">Beranda</a></li>
+        <li><a class="l" href="#about" data-i18n="nav.about">Tentang</a></li>
+        <li><a class="l" href="#skills" data-i18n="nav.skills">Keahlian</a></li>
+        <li><a class="l" href="#projects" data-i18n="nav.projects">Proyek</a></li>
+        <li><a class="l" href="#journey" data-i18n="nav.journey">Perjalanan</a></li>
+        <li><a class="l" href="#contact" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+
+      <!-- Pengalih bahasa -->
+      <div class="lang" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Bahasa">
+        <button type="button" data-lang="id" aria-pressed="false">ID</button>
+        <span class="sep" aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="burger" aria-expanded="false" aria-controls="menu" data-i18n-attr="aria-label:nav.menu" aria-label="Buka menu">☰</button>
+    </div>
+  </nav>
+</div></header>
 
 <main>
+
+<!-- HERO -->
 <section class="hero" id="home"><div class="wrap">
   <div>
-    <p class="hello">HELLO, I'M</p>
+    <p class="pill" data-i18n="hero.badge"></p>
+    <p class="hello" data-i18n="hero.hello">HALO, SAYA</p>
     <h1>Muhammad Rafi Aditya Putra</h1>
-    <p class="role">Frontend Developer &amp; Aspiring Software Engineer</p>
-    <p class="sub">I build thoughtful digital experiences through clean code, modern interfaces, and a continuous passion for learning.</p>
-    <p class="sub">Fokus saya adalah pengembangan website dan pengalaman pengguna: antarmuka yang responsif, jelas, dan nyaman digunakan.</p>
+    <p class="role" data-i18n="hero.role">Frontend Developer &amp; Calon Software Engineer</p>
+    <p class="sub" data-i18n="hero.sub1"></p>
+    <p class="sub" data-i18n="hero.sub2"></p>
     <div class="cta">
-      <a class="btn primary" href="#projects">Explore My Projects</a>
-      <a class="btn" href="public/resume.pdf" download="Resume-Muhammad-Rafi-Aditya-Putra.pdf">Download Resume</a>
+      <a class="btn primary" href="#projects" data-i18n="hero.explore">Lihat Proyek Saya</a>
+      <a class="btn" href="public/resume.pdf" download="Resume-Muhammad-Rafi-Aditya-Putra.pdf" data-i18n="hero.resume">Unduh Resume</a>
     </div>
     <div class="social" id="social"></div>
   </div>
-  <div class="photo"><img src="public/images/profile.jpg" alt="Foto Muhammad Rafi Aditya Putra" width="320" height="400" fetchpriority="high"></div>
+  <div class="photo"><img src="public/images/profile.jpg" data-i18n-attr="alt:hero.photoAlt" alt="" width="320" height="400" fetchpriority="high"></div>
 </div></section>
 
+<!-- ABOUT -->
 <section id="about"><div class="wrap rv">
-  <h2>Beyond The Code.</h2>
+  <p class="eyebrow" data-i18n="eyebrow.about"></p>
+  <h2 data-i18n="about.title"></h2>
   <div class="about" style="margin-top:36px">
     <div>
-      <p>Saya adalah seorang Web Developer yang memiliki ketertarikan besar dalam membangun pengalaman digital melalui desain dan teknologi.</p>
-      <p>Fokus utama saya adalah pengembangan Frontend, khususnya menciptakan antarmuka website yang responsif, modern, intuitif, dan berorientasi pada pengalaman pengguna. Saya terbiasa menggunakan HTML, CSS, JavaScript, Bootstrap, dan Tailwind CSS, sambil terus memperluas pemahaman Backend melalui PHP, Laravel, dan MySQL.</p>
-      <p>Bagi saya, menjadi developer bukan hanya tentang menulis kode, tetapi juga tentang terus belajar, bereksperimen, memecahkan masalah, dan menciptakan solusi digital yang bermanfaat. Tujuan jangka panjang saya adalah menjadi seorang Software Engineer.</p>
+      <p data-i18n="about.p1"></p>
+      <p data-i18n="about.p2"></p>
+      <p data-i18n="about.p3"></p>
     </div>
     <dl class="facts">
-      <div><dt>Current Focus</dt><dd>Frontend Development</dd></div>
-      <div><dt>Education</dt><dd>Bachelor's Degree in Informatics Engineering</dd></div>
-      <div><dt>Learning</dt><dd>Backend Development</dd></div>
-      <div><dt>Career Goal</dt><dd>Software Engineer</dd></div>
+      <div><dt data-i18n="about.focusL"></dt><dd data-i18n="about.focusV"></dd></div>
+      <div><dt data-i18n="about.eduL"></dt><dd data-i18n="about.eduV"></dd></div>
+      <div><dt data-i18n="about.learnL"></dt><dd data-i18n="about.learnV"></dd></div>
+      <div><dt data-i18n="about.goalL"></dt><dd data-i18n="about.goalV"></dd></div>
     </dl>
   </div>
 </div></section>
 
+<!-- SKILLS -->
 <section id="skills"><div class="wrap rv">
-  <h2>Tech Stack &amp; Skills</h2>
-  <p class="lead">Teknologi yang saya gunakan sehari-hari dan yang sedang saya pelajari.</p>
-  <h3 class="sub-h">Currently Using</h3><div class="grid" id="using"></div>
-  <h3 class="sub-h">Currently Learning</h3><div class="grid" id="learning"></div>
+  <p class="eyebrow" data-i18n="eyebrow.skills"></p>
+  <h2 data-i18n="skills.title"></h2>
+  <p class="lead" data-i18n="skills.lead"></p>
+  <h3 class="sub-h" data-i18n="skills.using"></h3><div class="grid" id="using"></div>
+  <h3 class="sub-h" data-i18n="skills.learning"></h3><div class="grid" id="learning"></div>
 </div></section>
 
+<!-- PROJECTS -->
 <section id="projects"><div class="wrap rv">
-  <h2>Selected Works.</h2>
-  <p class="lead">A collection of projects, experiments, and things I've built along my development journey.</p>
-  <div class="filters" id="filters" role="group" aria-label="Filter project"></div>
+  <p class="eyebrow" data-i18n="eyebrow.projects"></p>
+  <h2 data-i18n="projects.title"></h2>
+  <p class="lead" data-i18n="projects.lead"></p>
+  <div class="filters" id="filters" role="group" data-i18n-attr="aria-label:projects.filterLabel"></div>
   <div class="cards" id="cards" aria-live="polite"></div>
 </div></section>
 
+<!-- JOURNEY & EDUCATION -->
 <section id="journey"><div class="wrap rv">
-  <h2>My Development Journey.</h2>
+  <p class="eyebrow" data-i18n="eyebrow.journey"></p>
+  <h2 data-i18n="journey.title"></h2>
   <ol class="tl" id="timeline"></ol>
   <div class="edu">
-    <div><h3>S1 Teknik Informatika</h3><p>2024 – Sekarang</p></div>
-    <span class="st">Mahasiswa Aktif</span>
+    <div><h3 data-i18n="edu.title"></h3><p data-i18n="edu.years"></p></div>
+    <span class="st" data-i18n="edu.status"></span>
   </div>
 </div></section>
 
+<!-- CONTACT -->
 <section id="contact"><div class="wrap rv contact">
   <div>
-    <h2>Let's Build Something Together.</h2>
-    <p class="lead">Have an idea, an opportunity, or simply want to connect? I'd be happy to hear from you.</p>
+    <p class="eyebrow" data-i18n="eyebrow.contact"></p>
+    <h2 data-i18n="contact.title"></h2>
+    <p class="lead" data-i18n="contact.lead"></p>
     <div class="clinks" id="clinks"></div>
-    <p style="margin-top:28px"><a class="btn primary" id="mailbtn" href="#">Email Me</a></p>
+    <p style="margin-top:28px"><a class="btn primary" id="mailbtn" href="#" data-i18n="contact.email"></a></p>
   </div>
   <form id="form" novalidate>
-    <label>Name<input name="name" autocomplete="name" required><span class="err" data-for="name"></span></label>
-    <label>Email<input name="email" type="email" autocomplete="email" required><span class="err" data-for="email"></span></label>
-    <label>Message<textarea name="message" rows="5" required></textarea><span class="err" data-for="message"></span></label>
-    <button class="btn primary" type="submit">Send Message</button>
-    <p class="note" id="status" role="status">Pesan akan dibuka di aplikasi email Anda. Belum ada layanan pengiriman otomatis.</p>
+    <label><span data-i18n="form.name"></span><input name="name" autocomplete="name" required><span class="err" data-for="name"></span></label>
+    <label><span data-i18n="form.email"></span><input name="email" type="email" autocomplete="email" required><span class="err" data-for="email"></span></label>
+    <label><span data-i18n="form.message"></span><textarea name="message" rows="5" required></textarea><span class="err" data-for="message"></span></label>
+    <button class="btn primary" type="submit" data-i18n="form.send"></button>
+    <p class="note" id="status" role="status" data-i18n="form.note"></p>
   </form>
 </div></section>
+
 </main>
 
 <footer><div class="wrap">
-  <div><b>Muhammad Rafi Aditya Putra</b><br>Frontend Developer</div>
+  <div><b>Muhammad Rafi Aditya Putra</b><br><span data-i18n="footer.role"></span></div>
   <div class="social" id="fsocial"></div>
-  <div>© <span id="year"></span> · Designed &amp; Built with curiosity.</div>
+  <div>© <span id="year"></span> · <span data-i18n="footer.tagline"></span></div>
 </div></footer>
-<button class="top" id="top" aria-label="Kembali ke atas">↑</button>
+
+<button class="top" id="top" data-i18n-attr="aria-label:top.label" aria-label="Kembali ke atas">↑</button>
+
 <script src="js/data.js"></script>
+<script src="js/language.js"></script>
+<script src="js/render.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/contact-form.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,9 +1,19 @@
+/* ==========================================================
+   data.js — DATA website (tanpa teks terjemahan).
+   Teks yang tampil ke pengunjung ada di locales/id.json
+   dan locales/en.json, dihubungkan lewat "id" / key di bawah.
+   ========================================================== */
+
+/* ---------- Kontak & link ---------- */
 const PROFILE = {
-  email: "adityarafi412@gmail.com",   
+  email: "adityarafi412@gmail.com",   // ganti email di sini
   github: "https://github.com/Rafiadttya",
   linkedin: "https://www.linkedin.com/in/rafi-aditya-3295b3446",
 };
 
+
+/* ---------- Skills ----------
+   Format: ["Nama tampil", "nama-icon-di-Devicon"] */
 const SKILLS = {
   using: [
     ["HTML", "html5"],
@@ -25,30 +35,39 @@ const SKILLS = {
   ],
 };
 
+
+/* ---------- Projects ----------
+   id          : kunci unik; deskripsinya ada di locales/*.json
+                 pada "projects.items.<id>.desc".
+   category    : salah satu key di FILTERS (frontend / web / experiments).
+   github/demo : isi URL jika sudah ada. null = tampil "Coming Soon".
+   image       : path gambar, mis. "public/images/stephaven.jpg".
+                 null = thumbnail berisi inisial.
+   placeholder : true = contoh yang harus diganti project asli. */
 const PROJECTS = [
   {
+    id: "stephaven",
     title: "StepHaven",
-    category: "Frontend",
-    desc: "Website e-commerce toko sepatu dengan halaman produk, detail produk, dan keranjang belanja. Data disimpan di sisi client menggunakan IndexedDB.",
+    category: "frontend",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "IndexedDB"],
     image: null,
     github: null,
     demo: null,
   },
   {
+    id: "todo-design",
     title: "Todo List App Design",
-    category: "Other Experiments",
-    desc: "Perancangan aplikasi pencatat tugas harian: riset pengguna, user flow, hingga high-fidelity prototype interaktif di Figma.",
+    category: "experiments",
     tags: ["Figma", "UI/UX"],
     image: null,
     github: null,
     demo: null,
   },
   {
+    id: "placeholder",
     title: "Project Placeholder",
-    category: "Web Development",
+    category: "web",
     placeholder: true,
-    desc: "Contoh kartu project. Ganti dengan project asli: tulis deskripsi singkat, teknologi, dan tautan repositori.",
     tags: ["PHP", "Laravel", "MySQL"],
     image: null,
     github: null,
@@ -56,15 +75,13 @@ const PROJECTS = [
   },
 ];
 
-const FILTERS = ["All Projects", "Frontend", "Web Development", "Other Experiments"];
 
-const JOURNEY = [
-  ["2024", "The Beginning",
-    "Memulai perjalanan pendidikan S1 Teknik Informatika dan mengenal dasar-dasar pemrograman."],
-  ["2025", "Building Foundations",
-    "Mulai mendalami pengembangan website, HTML, CSS, JavaScript, serta memahami konsep UI/UX dan Git."],
-  ["2026", "Expanding My Skills",
-    "Mengembangkan kemampuan Frontend Development, mulai mempelajari PHP, Laravel, MySQL, dan konsep Backend Development."],
-  ["Next", "The Next Chapter",
-    "Terus mengembangkan kemampuan Software Engineering, membangun project yang lebih kompleks, dan memperdalam full-stack development."],
-];
+/* ---------- Filter project ----------
+   Label tiap filter ada di locales/*.json pada "filters.<key>". */
+const FILTERS = ["all", "frontend", "web", "experiments"];
+
+
+/* ---------- Timeline ----------
+   Isi tiap tahap (year, title, text) ada di locales/*.json
+   pada "journey.items.<key>". */
+const JOURNEY = ["beginning", "foundations", "expanding", "next"];

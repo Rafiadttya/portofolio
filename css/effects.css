@@ -1,0 +1,56 @@
+/* effects.css — Animasi: muncul saat scroll, transisi ganti bahasa, reduced-motion */
+
+/* ==========================================================
+   13. ANIMASI MUNCUL SAAT SCROLL
+   Hanya aktif jika JavaScript berjalan (class "js" ada di <html>).
+   Jika JS gagal, konten tetap terlihat.
+   ========================================================== */
+.js .rv {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.js .rv.on {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* ==========================================================
+   17. TRANSISI SAAT GANTI BAHASA
+   ========================================================== */
+main,
+footer {
+  transition: opacity 0.15s ease;
+}
+
+.switching main,
+.switching footer {
+  opacity: 0;
+}
+
+
+/* ==========================================================
+   15. AKSESIBILITAS: kurangi animasi jika pengguna memintanya
+   ========================================================== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js .rv {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* Sembunyikan isi sampai terjemahan selesai dimuat (mencegah teks kosong berkedip).
+   Class "ready" ditambahkan oleh main.js; ada cadangan otomatis 2 detik di index.html. */
+.js:not(.ready) main,
+.js:not(.ready) footer {
+  opacity: 0;
+}
