@@ -2,9 +2,6 @@
 
 Website portofolio pribadi seorang Frontend Developer. Dibangun dengan HTML, CSS, dan JavaScript murni (tanpa framework dan tanpa proses build), dengan dukungan dua bahasa: Indonesia dan Inggris.
 
-![Tampilan beranda](docs/preview-home.png)
-
-![Tampilan section proyek](docs/preview-projects.png)
 
 ## Fitur
 
