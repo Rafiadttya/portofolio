@@ -53,20 +53,21 @@
     "lead": "A collection of projects, experiments, and things I've built along my development journey.",
     "filterLabel": "Filter projects",
     "empty": "No projects in this category yet.",
-    "placeholder": "Placeholder — replace with a real project",
     "soon": "Coming Soon",
     "alt": "Preview of",
     "items": {
       "stephaven": {
-        "desc": "A shoe store e-commerce website with product listing, product detail, and shopping cart pages. Data is stored client-side using IndexedDB."
-      },
-      "todo-design": {
-        "desc": "Design of a daily task app: user research, user flows, and an interactive high-fidelity prototype in Figma."
-      },
-      "placeholder": {
-        "desc": "Sample project card. Replace it with a real project: add a short description, technologies, and repository links."
+        "category": "E-Commerce Website",
+        "label": "Personal Learning Project",
+        "subtitle": "Footwear E-Commerce Website",
+        "desc": [
+          "StepHaven is a frontend e-commerce website focused on showcasing casual and semi-formal footwear through a modern, clean, and user-friendly interface.",
+          "This project was developed as part of my learning journey in Frontend Development, allowing me to explore website layout design, responsive interfaces, and interactive user experiences.",
+          "Through StepHaven, I continue to improve my understanding of how to transform design concepts into functional web interfaces."
+        ]
       }
-    }
+    },
+    "featured": "Featured Project"
   },
   "filters": {
     "all": "All Projects",

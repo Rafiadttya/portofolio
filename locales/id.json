@@ -53,20 +53,21 @@
     "lead": "Kumpulan proyek, eksperimen, dan hal-hal yang saya bangun sepanjang perjalanan belajar saya.",
     "filterLabel": "Filter proyek",
     "empty": "Belum ada proyek di kategori ini.",
-    "placeholder": "Placeholder — ganti dengan proyek asli",
     "soon": "Segera Hadir",
     "alt": "Tampilan",
     "items": {
       "stephaven": {
-        "desc": "Website e-commerce toko sepatu dengan halaman produk, detail produk, dan keranjang belanja. Data disimpan di sisi client menggunakan IndexedDB."
-      },
-      "todo-design": {
-        "desc": "Perancangan aplikasi pencatat tugas harian: riset pengguna, user flow, hingga high-fidelity prototype interaktif di Figma."
-      },
-      "placeholder": {
-        "desc": "Contoh kartu project. Ganti dengan project asli: tulis deskripsi singkat, teknologi, dan tautan repositori."
+        "category": "Website E-Commerce",
+        "label": "Proyek Belajar Pribadi",
+        "subtitle": "Website E-Commerce Sepatu",
+        "desc": [
+          "StepHaven adalah website e-commerce frontend yang berfokus pada penjualan dan katalog sepatu kasual serta semi-formal dengan tampilan modern, bersih, dan mudah digunakan.",
+          "Project ini dikembangkan sebagai bagian dari perjalanan belajar saya dalam Frontend Development. Melalui project ini, saya mengeksplorasi desain layout website, antarmuka responsif, dan pengalaman pengguna yang interaktif.",
+          "StepHaven menjadi salah satu langkah saya dalam mengembangkan kemampuan mengubah konsep desain menjadi antarmuka website yang fungsional."
+        ]
       }
-    }
+    },
+    "featured": "Proyek Unggulan"
   },
   "filters": {
     "all": "Semua Proyek",

@@ -52,12 +52,12 @@
   color: var(--accent);
 }
 
-
+/* Frame foto profil */
 .photo {
   border-radius: 28px;
   overflow: hidden;
   border: 1px solid var(--line);
-  box-shadow: 14px 14px 0 var(--soft), 0 0 0 1px var(--line);  
+  box-shadow: 14px 14px 0 var(--soft), 0 0 0 1px var(--line);   /* bingkai offset lembut */
   aspect-ratio: 4 / 5;
   max-width: 320px;
   justify-self: end;
@@ -75,7 +75,6 @@
 .photo:hover img {
   transform: scale(1.03);
 }
-
 
 .about {
   display: grid;
@@ -110,7 +109,6 @@
   font-weight: 500;
   text-align: right;
 }
-
 
 .sub-h {
   font-size: 1.1rem;
@@ -293,6 +291,7 @@
   padding: 0 0 38px 34px;
 }
 
+/* Titik di garis timeline */
 .tl li::before {
   content: "";
   position: absolute;
@@ -349,6 +348,7 @@
   border-radius: 999px;
   font-size: 0.88rem;
 }
+
 
 .contact {
   display: grid;
@@ -448,6 +448,7 @@ textarea:focus {
   100% { box-shadow: 0 0 0 9px rgba(76, 175, 136, 0); }
 }
 
+/* Pola titik halus di latar hero */
 .hero {
   position: relative;
 }
@@ -503,4 +504,142 @@ textarea:focus {
 .thumb.has-img::before,
 .thumb.has-img::after {
   display: none;
+}
+
+.filters[hidden] {
+  display: none;
+}
+
+.filters[hidden] + .cards {
+  margin-top: 40px;
+}
+
+.featured {
+  grid-column: 1 / -1;                     
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;        
+  gap: 44px;
+  align-items: center;
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+  animation: card-in 0.4s both;
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.featured:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 2px 4px rgba(20, 22, 40, 0.05),
+              0 18px 44px rgba(20, 22, 40, 0.09);
+}
+
+.shot {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--bg);
+}
+
+.shot-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 14px;
+  background: #fbfbfa;
+  border-bottom: 1px solid var(--line);
+}
+
+.shot-bar i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d9dbe6;
+}
+
+.shot-url {
+  margin-left: 12px;
+  max-width: 320px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--mute);
+  font-size: 0.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shot img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.featured:hover .shot img {
+  transform: scale(1.03);
+}
+
+.shot-empty {
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  background: var(--soft);
+  color: var(--accent);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.featured .info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 6px 6px 6px 0;
+}
+
+.featured-tag {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: var(--mute);
+}
+
+.label-chip {
+  padding: 3px 11px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.featured h3 {
+  font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.featured .subtitle {
+  margin-top: -6px;
+  color: var(--mute);
+  font-size: 1.02rem;
+}
+
+.featured .desc {
+  color: #41444d;
+  font-size: 0.95rem;
 }

@@ -1,4 +1,14 @@
 @media (max-width: 860px) {
+  .featured {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 18px;
+  }
+
+  .featured .info {
+    padding: 0 4px 6px;
+  }
+
   section {
     padding: 80px 0;
   }

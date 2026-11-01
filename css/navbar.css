@@ -90,7 +90,6 @@ nav {
   color: var(--ink);
 }
 
-/* Bahasa yang sedang aktif */
 .lang button[aria-pressed="true"] {
   color: var(--accent);
   background: var(--soft);

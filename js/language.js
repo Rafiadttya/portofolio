@@ -2,11 +2,11 @@
 
   const STORAGE_KEY = "portfolio-lang";
   const SUPPORTED = ["id", "en"];
-  const FADE_MS = 150;                
+  const FADE_MS = 150;                 
 
-  const cache = {};                    
+  const cache = {};                  
   const listeners = [];                
-
+  let lang = "en";
 
   async function load(code) {
     if (cache[code]) return cache[code];
@@ -17,7 +17,6 @@
     cache[code] = await response.json();
     return cache[code];
   }
-
 
 
   function lookup(dict, key) {
@@ -32,16 +31,14 @@
     return fallback !== undefined ? fallback : key;
   }
 
-
   function detectLang() {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (SUPPORTED.includes(saved)) return saved;
-    } catch (e) { }
+    } catch (e) { /* localStorage tidak tersedia, abaikan */ }
 
     return (navigator.language || "").toLowerCase().startsWith("id") ? "id" : "en";
   }
-
 
   function apply() {
     document.documentElement.lang = lang;
@@ -84,7 +81,7 @@
     apply();
     listeners.forEach((fn) => fn(lang));                    
 
-    document.body.classList.remove("switching");           
+    document.body.classList.remove("switching");            
   }
 
   async function init() {

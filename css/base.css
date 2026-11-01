@@ -18,7 +18,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 76px;   
+  scroll-padding-top: 76px;   /* supaya judul tidak tertutup navbar */
 }
 
 body {

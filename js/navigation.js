@@ -2,7 +2,6 @@
 
   const $ = (selector, root = document) => root.querySelector(selector);
 
-
   function initReveal() {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -18,7 +17,6 @@
 
     document.querySelectorAll(".rv").forEach((el) => observer.observe(el));
   }
-
 
   function initActiveLink() {
     const navLinks = [...document.querySelectorAll("a.l")];
@@ -39,7 +37,6 @@
   }
 
 
-
   function initMobileMenu() {
     const burger = $(".burger");
     const menu = $("#menu");
@@ -57,7 +54,6 @@
     });
   }
 
-
   function initBackToTop() {
     const button = $("#top");
 
@@ -69,6 +65,8 @@
 
     button.addEventListener("click", () => window.scrollTo({ top: 0 }));
   }
+
+
 
 
   function initProgress() {

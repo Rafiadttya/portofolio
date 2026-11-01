@@ -2,6 +2,7 @@
 
   const $ = (selector, root = document) => root.querySelector(selector);
 
+  // Tampilkan / hapus pesan error di bawah sebuah field
   function showError(field, key) {
     const el = $(`.err[data-for="${field}"]`);
 
