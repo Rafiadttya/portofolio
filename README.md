@@ -20,21 +20,6 @@ Website portofolio pribadi seorang Frontend Developer. Dibangun dengan HTML, CSS
 
 HTML5 · CSS3 (custom properties, grid, flexbox) · JavaScript ES Modules · Devicon
 
-## Menjalankan di komputer
-
-Website harus dibuka lewat server lokal karena file terjemahan dimuat dengan `fetch`.
-
-1. Buka folder proyek di VS Code
-2. Klik kanan `index.html` lalu pilih **Open with Five Server**
-
-Alternatif tanpa VS Code:
-
-```bash
-npm start
-```
-
-atau `python3 -m http.server 8000` lalu buka `http://localhost:8000`.
-
 ## Struktur folder
 
 ```
@@ -68,42 +53,6 @@ atau `python3 -m http.server 8000` lalu buka `http://localhost:8000`.
     ├── utilities/animations.css
     └── responsive.css          Penyesuaian tablet dan HP
 ```
-
-## Mengubah konten
-
-| Yang ingin diubah | Lokasi |
-|---|---|
-| Email, GitHub, LinkedIn | `scripts/config/profile.js` |
-| Daftar skills | `scripts/config/skills.js` |
-| Teks halaman (judul, paragraf, tombol, form) | `locales/id.json` dan `locales/en.json` |
-| Foto profil | `assets/images/profile.jpg` |
-| Resume | `assets/documents/resume.pdf` |
-| Warna dan ukuran dasar | `styles/base/variables.css` |
-
-### Menambah project
-
-1. Simpan screenshot di `assets/images/projects/` (rasio 16:10).
-2. Tambahkan objek baru di `scripts/config/projects.js`:
-
-   | Properti | Keterangan |
-   |---|---|
-   | `id` | Kunci unik, dipakai di file terjemahan |
-   | `title` | Nama project |
-   | `category` | `frontend`, `web`, atau `experiments` |
-   | `featured` | `true` untuk tampilan besar, hilangkan untuk kartu biasa |
-   | `tags` | Teknologi yang benar-benar dipakai |
-   | `image` | Path screenshot |
-   | `github`, `demo` | URL asli, atau `null` untuk menampilkan "Coming Soon" |
-
-3. Tambahkan teksnya di `locales/id.json` dan `locales/en.json` pada `projects.items.<id>` dengan isi `category`, `label`, `subtitle`, dan `desc` (daftar paragraf).
-
-### Menambah tahap perjalanan
-
-Tambahkan kunci baru di `scripts/config/journey.js`, lalu isi `year`, `title`, dan `text` pada `journey.items.<kunci>` di kedua file terjemahan.
-
-### Menambah teks baru di HTML
-
-Beri atribut `data-i18n="bagian.kunci"` pada elemen, lalu isi kunci tersebut di kedua file terjemahan. Untuk atribut seperti `alt` atau `aria-label`, gunakan `data-i18n-attr="alt:bagian.kunci"`.
 
 ## Kontak
 
