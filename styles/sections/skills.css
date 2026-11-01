@@ -1,0 +1,42 @@
+.sub-h {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 40px 0 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.tech {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.tech:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: #d4d7ee;
+}
+
+.tech img {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 12px;
+}
+
+.tech b {
+  display: block;
+  font-weight: 500;
+}
+
+.tech small {
+  color: var(--mute);
+  font-size: 0.78rem;
+}

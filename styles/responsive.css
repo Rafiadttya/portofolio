@@ -1,4 +1,5 @@
 @media (max-width: 860px) {
+  
   .featured {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -30,6 +31,7 @@
     display: block;
   }
 
+  
   .links {
     position: absolute;
     top: 68px;

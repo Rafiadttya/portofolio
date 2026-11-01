@@ -5,24 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muhammad Rafi Aditya Putra — Frontend Developer</title>
 <meta name="description" content="Portfolio Muhammad Rafi Aditya Putra, Frontend Developer & Calon Software Engineer.">
+<meta name="author" content="Muhammad Rafi Aditya Putra">
 <meta name="theme-color" content="#f7f7f5">
-<link rel="icon" href="public/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="Muhammad Rafi Aditya Putra — Frontend Developer">
 <meta property="og:description" content="Thoughtful digital experiences through clean code and modern interfaces.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script>
-  document.documentElement.classList.add("js");
-  setTimeout(function () { document.documentElement.classList.add("ready"); }, 2000);
-</script>
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/sections.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/effects.css">
-<link rel="stylesheet" href="css/responsive.css">
+<script src="scripts/boot.js"></script>
+<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+<a class="skip-link" href="#main" data-i18n="nav.skip">Lewati ke konten utama</a>
 
 <header>
   <div class="progress" id="progress" aria-hidden="true"></div>
@@ -40,7 +34,7 @@
         <li><a class="l" href="#contact" data-i18n="nav.contact">Kontak</a></li>
       </ul>
 
-      <div class="lang" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Bahasa">
+            <div class="lang" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Bahasa">
         <button type="button" data-lang="id" aria-pressed="false">ID</button>
         <span class="sep" aria-hidden="true">|</span>
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
@@ -51,7 +45,7 @@
   </nav>
 </div></header>
 
-<main>
+<main id="main">
 
 <section class="hero" id="home"><div class="wrap">
   <div>
@@ -63,18 +57,17 @@
     <p class="sub" data-i18n="hero.sub2"></p>
     <div class="cta">
       <a class="btn primary" href="#projects" data-i18n="hero.explore">Lihat Proyek Saya</a>
-      <a class="btn" href="public/resume.pdf" download="Resume-Muhammad-Rafi-Aditya-Putra.pdf" data-i18n="hero.resume">Unduh Resume</a>
+      <a class="btn" href="assets/documents/resume.pdf" download="Resume-Muhammad-Rafi-Aditya-Putra.pdf" data-i18n="hero.resume">Unduh Resume</a>
     </div>
     <div class="social" id="social"></div>
   </div>
-  <div class="photo"><img src="public/images/profile.jpg" data-i18n-attr="alt:hero.photoAlt" alt="" width="320" height="400" fetchpriority="high"></div>
+  <div class="photo"><img src="assets/images/profile.jpg" data-i18n-attr="alt:hero.photoAlt" alt="" width="320" height="400" fetchpriority="high"></div>
 </div></section>
 
-<!-- ABOUT -->
 <section id="about"><div class="wrap rv">
   <p class="eyebrow" data-i18n="eyebrow.about"></p>
   <h2 data-i18n="about.title"></h2>
-  <div class="about" style="margin-top:36px">
+  <div class="about">
     <div>
       <p data-i18n="about.p1"></p>
       <p data-i18n="about.p2"></p>
@@ -121,7 +114,7 @@
     <h2 data-i18n="contact.title"></h2>
     <p class="lead" data-i18n="contact.lead"></p>
     <div class="clinks" id="clinks"></div>
-    <p style="margin-top:28px"><a class="btn primary" id="mailbtn" href="#" data-i18n="contact.email"></a></p>
+    <p class="contact-cta"><a class="btn primary" id="mailbtn" href="#" data-i18n="contact.email"></a></p>
   </div>
   <form id="form" novalidate>
     <label><span data-i18n="form.name"></span><input name="name" autocomplete="name" required><span class="err" data-for="name"></span></label>
@@ -142,11 +135,6 @@
 
 <button class="top" id="top" data-i18n-attr="aria-label:top.label" aria-label="Kembali ke atas">↑</button>
 
-<script src="js/data.js"></script>
-<script src="js/language.js"></script>
-<script src="js/render.js"></script>
-<script src="js/navigation.js"></script>
-<script src="js/contact-form.js"></script>
-<script src="js/main.js"></script>
+<script type="module" src="scripts/main.js"></script>
 </body>
 </html>

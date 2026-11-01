@@ -3,6 +3,7 @@
     "description": "Portfolio Muhammad Rafi Aditya Putra, Frontend Developer & Calon Software Engineer. Antarmuka website yang responsif, modern, dan berorientasi pada pengguna."
   },
   "nav": {
+    "skip": "Lewati ke konten utama",
     "home": "Beranda",
     "about": "Tentang",
     "skills": "Keahlian",

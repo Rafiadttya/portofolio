@@ -1,0 +1,2 @@
+document.documentElement.classList.add("js");
+setTimeout(() => document.documentElement.classList.add("ready"), 2000);

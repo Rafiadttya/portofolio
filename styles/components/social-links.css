@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  gap: 18px;
+  color: var(--mute);
+  font-size: 0.92rem;
+}
+
+.social a:hover {
+  color: var(--accent);
+}

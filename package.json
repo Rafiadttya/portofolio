@@ -1,0 +1,11 @@
+{
+  "name": "rafi-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website of Muhammad Rafi Aditya Putra, Frontend Developer",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "author": "Muhammad Rafi Aditya Putra",
+  "license": "UNLICENSED"
+}
